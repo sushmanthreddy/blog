@@ -1,0 +1,70 @@
+baseURL = "https://sushmanthreddy.github.io/"
+languageCode = "en-us"
+title = "Sushmanth's blog"
+theme = "noteworthy"
+enableRobotsTXT = true
+paginate = 5 # Set the number of posts to show before overflowing to the next page.
+summaryLength = 10 # Configure how long the post summary should be on the homepage.
+
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+googleAnalytics = ""
+
+
+[author]
+    name = "Sushmanth"
+
+# Set to false to disallow raw HTML in markdown files
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+    math = true
+    # Blog description at the top of the homepage. Supports markdown.
+    description = "Hi, welcome to Sushmanth's blog"
+
+    showReadMore = false
+
+    # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
+    enableKofi = false
+    kofi = ""
+
+    # Add links to your accounts. 
+    # Main
+    email = "sushmanthreddymereddy@gmail.com"
+    twitter = "https://twitter.com/Sushmanth__"
+    instagram = "https://www.instagram.com/sushmanth.__.reddy/"
+    #youtube = "#"
+    linkedin = "https://www.linkedin.com/in/sushmanth-reddy-mereddy-b942811b1/"
+
+    # Programming
+    github = "https://github.com/sushmanthreddy"
+    #stackoverflow = "#"
+    #gitlab = "#"
+
+    # Academic
+    #googlescholar = "#"
+
+# Menu links along the sidebar navigation.
+[[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    url = "/about/"
+    weight = 1 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[[menu.main]]
+    name = "archive"
+    identifier = "blog archives"
+    url = "/archives/"
+    weight = 3
+
+[[menu.main]]
+    name = "CV"
+    identifier = "CV"
+    url = "https://sushmanthreddy.github.io/CV/CV.pdf"
+    weight = 4
